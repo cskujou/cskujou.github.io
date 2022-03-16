@@ -463,7 +463,7 @@
 <p>画出在<code>3</code>个数<code>a</code>, <code>b</code>, <code>c</code>中求中值问题的<strong>判定树</strong>。</p>
 </blockquote>
 <h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><p>我们可以先对<code>a</code>, <code>b</code>, <code>c</code>三个元素进行排序，一旦得到排序结果，即得到<code>a</code>, <code>b</code>, <code>c</code>三个元素的中值。</p>
-<h3 id="解答"><a href="#解答" class="headerlink" title="解答"></a>解答</h3><p><img src="C:\Users\Kujou\Documents\GitHub\myblog\source\_posts\alg-hw-ch2.assets\image-20220316093943194.png" alt="image-20220316093943194"></p>
+<h3 id="解答"><a href="#解答" class="headerlink" title="解答"></a>解答</h3><p><img src="\images\alg-hw-ch2.assets\image-20220316093943194.png" alt="image-20220316093943194"></p>
 <h2 id="习题-2-2"><a href="#习题-2-2" class="headerlink" title="习题 2-2"></a>习题 2-2</h2><blockquote>
 <p>写一个与算法1.4不同的算法找出一个集合的最大元和最小元。它的方法是，每次拿相邻的元素对进行比较，然后拿其中的大者与当前最大的元素进行比较，拿其中的小者与当前最小的元素比较，最后找出最大元和最小元。分析这一算法的比较次数，并与算法1.4对照。哪个算法好些？</p>
 <h4 id="算法1-4"><a href="#算法1-4" class="headerlink" title="算法1.4"></a>算法1.4</h4><p>功能：找出集合$S$中的最大元和最小元</p>
@@ -1056,5 +1056,21 @@ $(document).ready(function() {
     })
   });
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
 </body>
 </html>
